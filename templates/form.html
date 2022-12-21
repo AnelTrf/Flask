@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet"  href="form.css">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+       <div class="header">
+         <h2>Registration form</h2>
+     </div>
+
+     <form class="form" id="form">
+     <div class="form-control">
+       <label>Username</label>
+       <input id="username" name="" type="text" placeholder="Enter your name">
+       <i class="fas fa-check-circle"></i>
+       <i class="fas fa-exclamation-circle"></i>
+       <small></small>
+     </div>
+     <div class="form-control">
+       <label>Email</label>
+       <input id="email" type="text" name="" placeholder="Enter your Email">
+       <i class="fas fa-check-circle"></i>
+       <i class="fas fa-exclamation-circle"></i>
+       <small></small>
+     </div>
+     <div class="form-control">
+       <label>Password</label>
+       <input id="password" name="" type="password" placeholder="Enter your password">
+       <i class="fas fa-check-circle"></i>
+       <i class="fas fa-exclamation-circle"></i>
+       <small></small>
+     </div>
+     <div class="form-control">
+       <label>Confirm Password </label>
+       <input id="cpassword" name="" type="password" placeholder="Enter your password again">
+       <i class="fas fa-check-circle"></i>
+       <i class="fas fa-exclamation-circle"></i>
+       <small></small>
+     </div>
+
+     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <input type="submit" value="Submit" class="btn" name="">
+      <div class="container.signin">
+    <p>Already have an account? <a href="#">Login</a>.</p>
+      </div>
+    </form>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="form.js" charset="utf-8"></script>
+    </div>
+</body>
+</html>

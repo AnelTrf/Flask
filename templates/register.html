@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Transitional", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(236, 199, 249 );
+  width: 400px;
+  max-width: 100%;
+  position: center;
+  padding: 10px;
+
+}
+.header {
+  background-color: #ECC7F9;
+  border-bottom: 1px  solid #f0f0f0;
+  padding: 20px 40px;
+}
+.form {
+  padding: 30px 50px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<form method="POST" action="">
+<div class="container">
+    <div class="header">
+         <h1>Registration form</h1>
+     </div>
+    <form class="form">
+     <div class="form-control">
+        {{ form.hidden_tag() }}
+         </div>
+     <div class="form-control">
+         <label> Username </label>
+        {{ form.username }}
+         </div>
+    <div class="form-control">
+         <label> Email </label>
+        {{ form.email }}
+         </div>
+     <div class="form-control">
+         <label> Password </label>
+        {{ form.password }}
+         </div>
+    <div class="form-control">
+         <label> Confirm </label>
+        {{ form.confirm }}
+         </div>
+     <div class="form-control">
+        {{ form.submit }}
+     </div>
+        <a class="signin" href="/login"> Have an account? Log In </a>
+        <div></div>
+        <a href="/"> Go to main page </a>
+</form>
+</div>
+</form>
+</body>
+</html>
